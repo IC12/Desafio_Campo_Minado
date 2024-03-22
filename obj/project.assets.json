@@ -1,35 +1,38 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Iara\\.nuget\\packages\\": {}
+    "C:\\Users\\iara.camargos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Iara\\Desktop\\ivoryit-testeestagio-campo-minado-master\\Ivory.TesteEstagio.CampoMinado\\Ivory.TesteEstagio.CampoMinado.csproj",
+      "projectUniqueName": "C:\\Users\\iara.camargos\\Documents\\CURSOS\\Desafio_Campo_Minado\\Ivory.TesteEstagio.CampoMinado.csproj",
       "projectName": "Ivory.TesteEstagio.CampoMinado",
-      "projectPath": "C:\\Users\\Iara\\Desktop\\ivoryit-testeestagio-campo-minado-master\\Ivory.TesteEstagio.CampoMinado\\Ivory.TesteEstagio.CampoMinado.csproj",
-      "packagesPath": "C:\\Users\\Iara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Iara\\Desktop\\ivoryit-testeestagio-campo-minado-master\\Ivory.TesteEstagio.CampoMinado\\obj\\",
+      "projectPath": "C:\\Users\\iara.camargos\\Documents\\CURSOS\\Desafio_Campo_Minado\\Ivory.TesteEstagio.CampoMinado.csproj",
+      "packagesPath": "C:\\Users\\iara.camargos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\iara.camargos\\Documents\\CURSOS\\Desafio_Campo_Minado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Iara\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\iara.camargos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -37,17 +40,24 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -56,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.411\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

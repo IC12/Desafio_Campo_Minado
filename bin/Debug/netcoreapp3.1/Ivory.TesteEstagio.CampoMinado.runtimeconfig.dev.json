@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Iara\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Iara\\.nuget\\packages"
+      "C:\\Users\\iara.camargos\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\iara.camargos\\.nuget\\packages"
     ]
   }
 }
