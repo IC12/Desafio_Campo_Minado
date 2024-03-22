@@ -1,3 +1,3 @@
-# Desafio-CampoMinado
-- Desafio Estágio Ivory -
-Novata em .NET meu primeiro jogo em C#
+# Desafio Campo Minado
+Desafio Processo Seletivo para Estágio Ivory
+Meu primeiro jogo em C# atualizado 2024
