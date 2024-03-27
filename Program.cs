@@ -10,16 +10,35 @@ namespace Ivory.TesteEstagio.CampoMinado
             Console.WriteLine("Início do jogo\n=========");
             Console.WriteLine(campoMinado.Tabuleiro);  
 
-            Console.WriteLine("");
-            Console.WriteLine("=== DIGITE UMA POSIÇÃO ===");
-            Console.WriteLine("");
-            Console.WriteLine("Digite números de 1 a 9.");
-            Console.WriteLine("");
-            Console.WriteLine("Linha: ");
-            int l = int.Parse(Console.ReadLine());
-            Console.WriteLine("Coluna: ");
-            int c = int.Parse(Console.ReadLine());
-            Console.WriteLine("");   
+            while (campoMinado.JogoStatus == 0) {
+                Console.WriteLine("");
+                Console.WriteLine("=== DIGITE UMA POSIÇÃO ===");
+                Console.WriteLine("");
+                Console.WriteLine("Digite números de 1 a 9.");
+                Console.WriteLine("");
+                Console.WriteLine("Linha: ");
+                int l = int.Parse(Console.ReadLine());
+                Console.WriteLine("Coluna: ");
+                int c = int.Parse(Console.ReadLine());
+                Console.WriteLine("");  
+
+                campoMinado.Abrir(l, c);
+
+                switch (campoMinado.JogoStatus) {
+                    case 0:
+                        jogoAberto();
+                        break;
+                    case 1:
+                        vitoriaJogo();
+                        break;
+                    case 2:
+                        gameOver();
+                        break;
+                }
+
+                Console.WriteLine(campoMinado.Tabuleiro);
+            }
+        }
 
         static void jogoAberto()
         {
@@ -34,198 +53,6 @@ namespace Ivory.TesteEstagio.CampoMinado
         static void vitoriaJogo()
         {
             Console.WriteLine("Vitória, você encontrou todas as casas que não possui bomba!");   
-        }
-            
-            campoMinado.Abrir(l, c);
-
-            if(l == 4 && c == 1)
-            {
-                Console.WriteLine(campoMinado.Tabuleiro);
-                Console.WriteLine(campoMinado.JogoStatus);
-                jogoAberto();
-                Console.WriteLine("Linha: ");
-                l = int.Parse(Console.ReadLine());
-                Console.WriteLine("Coluna: ");
-                c = int.Parse(Console.ReadLine());    
-            } else if(l == 5 && c == 3)
-                {
-                    Console.WriteLine(campoMinado.Tabuleiro);
-                    Console.WriteLine(campoMinado.JogoStatus);
-                    jogoAberto();
-                    Console.WriteLine("Linha: ");
-                    l = int.Parse(Console.ReadLine());
-                    Console.WriteLine("Coluna: ");
-                    c = int.Parse(Console.ReadLine());  
-                } else if(l == 5 && c == 2)
-                    {
-                        Console.WriteLine(campoMinado.Tabuleiro);
-                        Console.WriteLine(campoMinado.JogoStatus);
-                        jogoAberto();
-                        Console.WriteLine("Linha: ");
-                        l = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Coluna: ");
-                        c = int.Parse(Console.ReadLine());    
-                    } else if(l == 5 && c == 1)
-                        {
-                            Console.WriteLine(campoMinado.Tabuleiro);
-                            Console.WriteLine(campoMinado.JogoStatus);
-                            jogoAberto();
-                            Console.WriteLine("Linha: ");
-                            l = int.Parse(Console.ReadLine());
-                            Console.WriteLine("Coluna: ");
-                            c = int.Parse(Console.ReadLine());    
-                        } else if(l == 5 && c == 6)
-                            {
-                                Console.WriteLine(campoMinado.Tabuleiro);
-                                Console.WriteLine(campoMinado.JogoStatus);
-                                jogoAberto();
-                                Console.WriteLine("Linha: ");
-                                l = int.Parse(Console.ReadLine());
-                                Console.WriteLine("Coluna: ");
-                                c = int.Parse(Console.ReadLine());    
-                            } else if(l == 6 && c == 1)
-                                {
-                                    Console.WriteLine(campoMinado.Tabuleiro);
-                                    Console.WriteLine(campoMinado.JogoStatus);
-                                    jogoAberto();
-                                    Console.WriteLine("Linha: ");
-                                    l = int.Parse(Console.ReadLine());
-                                    Console.WriteLine("Coluna: ");
-                                    c = int.Parse(Console.ReadLine());    
-                                } else if(l == 6 && c == 2)
-                                    {
-                                        Console.WriteLine(campoMinado.Tabuleiro);
-                                        Console.WriteLine(campoMinado.JogoStatus);
-                                        jogoAberto();
-                                        Console.WriteLine("Linha: ");
-                                        l = int.Parse(Console.ReadLine());
-                                        Console.WriteLine("Coluna: ");
-                                        c = int.Parse(Console.ReadLine());    
-                                    } else if(l == 6 && c == 3)
-                                        {
-                                            Console.WriteLine(campoMinado.Tabuleiro);
-                                            Console.WriteLine(campoMinado.JogoStatus);
-                                            jogoAberto();
-                                            Console.WriteLine("Linha: ");
-                                            l = int.Parse(Console.ReadLine());
-                                            Console.WriteLine("Coluna: ");
-                                            c = int.Parse(Console.ReadLine());    
-                                        } else if(l == 6 && c == 4)
-                                            {
-                                                Console.WriteLine(campoMinado.Tabuleiro);
-                                                Console.WriteLine(campoMinado.JogoStatus);
-                                                jogoAberto();
-                                                Console.WriteLine("Linha: ");
-                                                l = int.Parse(Console.ReadLine());
-                                                Console.WriteLine("Coluna: ");
-                                                c = int.Parse(Console.ReadLine());    
-                                            } else if(l == 6 && c == 7)
-                                                {
-                                                    Console.WriteLine(campoMinado.Tabuleiro);
-                                                    Console.WriteLine(campoMinado.JogoStatus);
-                                                    jogoAberto();
-                                                    Console.WriteLine("Linha: ");
-                                                    l = int.Parse(Console.ReadLine());
-                                                    Console.WriteLine("Coluna: ");
-                                                    c = int.Parse(Console.ReadLine());    
-                                                } else if(l == 6 && c == 9)
-                                                    {
-                                                        Console.WriteLine(campoMinado.Tabuleiro);
-                                                        Console.WriteLine(campoMinado.JogoStatus);
-                                                        jogoAberto();
-                                                        Console.WriteLine("Linha: ");
-                                                        l = int.Parse(Console.ReadLine());
-                                                        Console.WriteLine("Coluna: ");
-                                                        c = int.Parse(Console.ReadLine());    
-                                                    } else if(l == 7 && c <= 8)
-                                                        {
-                                                            Console.WriteLine(campoMinado.Tabuleiro);
-                                                            Console.WriteLine(campoMinado.JogoStatus);
-                                                            jogoAberto();
-                                                            Console.WriteLine("Linha: ");
-                                                            l = int.Parse(Console.ReadLine());
-                                                            Console.WriteLine("Coluna: ");
-                                                            c = int.Parse(Console.ReadLine());
-                                                        } else if(l == 8 && c <= 9)
-                                                            {
-                                                                Console.WriteLine(campoMinado.Tabuleiro);
-                                                                Console.WriteLine(campoMinado.JogoStatus);
-                                                                jogoAberto();
-                                                                Console.WriteLine("Linha: ");
-                                                                l = int.Parse(Console.ReadLine());
-                                                                Console.WriteLine("Coluna: ");
-                                                                c = int.Parse(Console.ReadLine());
-                                                            } else if(l == 9 && c <= 9)
-                                                                {
-                                                                    Console.WriteLine(campoMinado.Tabuleiro);
-                                                                    Console.WriteLine(campoMinado.JogoStatus);
-                                                                    jogoAberto();
-                                                                    Console.WriteLine("Linha: ");
-                                                                    l = int.Parse(Console.ReadLine());
-                                                                    Console.WriteLine("Coluna: ");
-                                                                    c = int.Parse(Console.ReadLine());
-                                                                } else
-                                                                    {
-                                                                        Console.WriteLine(campoMinado.Tabuleiro);
-                                                                        Console.WriteLine(campoMinado.JogoStatus);
-                                                                        vitoriaJogo();
-                                                                    } 
-
-            campoMinado.Abrir(l, c);
-
-            if(l == 1 && c == 9)
-            {
-                Console.WriteLine(campoMinado.Tabuleiro);
-                Console.WriteLine(campoMinado.JogoStatus);
-                gameOver();  
-            } else if(l == 4 && c == 2)
-                {
-                    Console.WriteLine(campoMinado.Tabuleiro);
-                    Console.WriteLine(campoMinado.JogoStatus);
-                    gameOver(); 
-                } else if(l == 4 && c == 3)
-                    {
-                        Console.WriteLine(campoMinado.Tabuleiro);
-                        Console.WriteLine(campoMinado.JogoStatus);
-                        gameOver();   
-                    } else if(l == 5 && c == 4)
-                        {
-                            Console.WriteLine(campoMinado.Tabuleiro);
-                            Console.WriteLine(campoMinado.JogoStatus);
-                            gameOver();  
-                        } else if(l == 5 && c == 5)
-                            {
-                                Console.WriteLine(campoMinado.Tabuleiro);
-                                Console.WriteLine(campoMinado.JogoStatus);
-                                gameOver();  
-                            } else if(l == 5 && c == 7)
-                                {
-                                    Console.WriteLine(campoMinado.Tabuleiro);
-                                    Console.WriteLine(campoMinado.JogoStatus);
-                                    gameOver();   
-                                } else if(l == 6 && c == 5)
-                                    {
-                                        Console.WriteLine(campoMinado.Tabuleiro);
-                                        Console.WriteLine(campoMinado.JogoStatus);
-                                        gameOver();   
-                                    } else if(l == 6 && c == 6)
-                                        {
-                                            Console.WriteLine(campoMinado.Tabuleiro);
-                                            Console.WriteLine(campoMinado.JogoStatus);
-                                            gameOver();   
-                                        } else if(l == 6 && c == 8)
-                                            {
-                                                Console.WriteLine(campoMinado.Tabuleiro);
-                                                Console.WriteLine(campoMinado.JogoStatus);
-                                                gameOver();
-
-                                            } else if(l == 7 && c == 9)
-                                                {
-                                                    Console.WriteLine(campoMinado.Tabuleiro);
-                                                    Console.WriteLine(campoMinado.JogoStatus);
-                                                    gameOver();    
-                                                }
-
         }
     }
 }

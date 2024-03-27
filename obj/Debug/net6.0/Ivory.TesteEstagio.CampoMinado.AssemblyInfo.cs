@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ivory.TesteEstagio.CampoMinado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d4e66b6b38844009471bddf908c5d3c47445bb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f824eb97f562859ade5f2d89f989f382e42c8dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ivory.TesteEstagio.CampoMinado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ivory.TesteEstagio.CampoMinado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -69,9 +69,7 @@
                     }
 
                     if (x != 8)
-                    {
                         tabuleiro += "\r\n";
-                    }
                 }
 
                 return tabuleiro;
@@ -201,13 +199,12 @@
                         Jogo[8, 6] = "0";
                         Jogo[8, 7] = "0";
                         Jogo[8, 8] = "0";
+
                         JogoTotalDeCasasAbertas += 21;
                     }
 
                     if (JogoTotalDeCasasAbertas == 71)
-                    {
                         Status = StatusTipo.Vitoria;
-                    }
                 }
             }
         }
